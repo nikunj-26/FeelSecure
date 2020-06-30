@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ConfigurationActivity" >
+
+    <EditText
+        android:id="@+id/phonenumberinput1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="55dp"
+        android:ems="10"
+        android:inputType="phone" 
+        android:hint="Hold to open phonebook"/>
+
+    <TextView
+        android:id="@+id/displayname1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30dp"
+        android:layout_alignRight="@+id/phonenumberinput1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/displayname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phonenumberinput1"
+        android:layout_alignRight="@+id/phonenumberinput1"
+        android:layout_below="@+id/phonenumberinput1"
+        android:layout_marginTop="30dp"
+       
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/phonenumberinput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/displayname2"
+        android:layout_alignRight="@+id/displayname2"
+        android:layout_below="@+id/displayname2"
+        android:ems="10"
+         android:hint="Hold to open phonebook"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/phonenumberinput3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phonenumberinput2"
+        android:layout_alignRight="@+id/phonenumberinput2"
+        android:layout_below="@+id/displayname3"
+        android:hint="Hold to open phonebook"
+        
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/displayname3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phonenumberinput2"
+        android:layout_alignRight="@+id/phonenumberinput2"
+        android:layout_below="@+id/phonenumberinput2"
+        android:layout_margin="33dp"
+        android:layout_marginTop="31dp"
+         
+        
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Click to continue" />
+
+</RelativeLayout>
